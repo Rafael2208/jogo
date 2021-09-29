@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_500"
-    tools:context=".Fragments.NumerosFragment">
+    tools:context=".Fragments.TransporteFragment">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="35dp" />
+        app:layout_constraintGuide_begin="16dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -23,62 +23,75 @@
         app:layout_constraintGuide_begin="350dp" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="142dp"
-        android:layout_height="132dp"
+        android:id="@+id/buttonAviao"
+        android:layout_width="133dp"
+        android:layout_height="119dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/um1"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/aviao"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="136dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/buttonCarro"
+        android:layout_width="139dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/dois1"
+        android:src="@drawable/carro"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="143dp"
-        android:layout_height="144dp"
+        android:id="@+id/buttonMoto"
+        android:layout_width="133dp"
+        android:layout_height="116dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/tres1"
+        android:src="@drawable/moto"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAviao" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="130dp"
-        android:layout_height="147dp"
+        android:id="@+id/buttonOnibus"
+        android:layout_width="131dp"
+        android:layout_height="117dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/quatro1"
+        android:src="@drawable/onibus"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCarro" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="144dp"
-        android:layout_height="135dp"
+        android:id="@+id/buttonTrator"
+        android:layout_width="135dp"
+        android:layout_height="120dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/cinco1"
+        android:src="@drawable/trator"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonMoto" />
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="128dp"
-        android:layout_height="135dp"
+        android:id="@+id/buttonTrem"
+        android:layout_width="127dp"
+        android:layout_height="121dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/seis1"
+        android:src="@drawable/trem"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonOnibus" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="276dp"
+        android:onClick="pausarMusica"
+        android:text="Button"
+        app:backgroundTint="#6E0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

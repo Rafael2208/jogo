@@ -1,7 +1,6 @@
 package br.com.jogoaprender;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -11,7 +10,7 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 
 import br.com.jogoaprender.Fragments.BichosFragment;
-import br.com.jogoaprender.Fragments.NumerosFragment;
+import br.com.jogoaprender.Fragments.TransporteFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(getSupportFragmentManager(),
                 FragmentPagerItems.with(this)
                 .add("Bichos", BichosFragment.class)
-                .add("Números", NumerosFragment.class)
+                .add("Transporte", TransporteFragment.class)
                 .create()
         );
 
